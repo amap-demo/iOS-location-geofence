@@ -66,7 +66,6 @@
 - (void)doClear {
     [self.mapView removeOverlays:self.mapView.overlays];  //把之前添加的Overlay都移除掉
     [self.geoFenceManager removeAllGeoFenceRegions];  //移除所有已经添加的围栏，如果有正在请求的围栏也会丢弃
-
 }
 
 #pragma mark - Xib btns click
@@ -103,7 +102,7 @@
     
     [self.geoFenceManager addPolygonRegionForMonitoringWithCoordinates:coorArr count:array.count customID:@"polygon_1"];
     
-    free(coorArr);
+    free(coorArr);  //malloc，使用后，记得free
     coorArr = NULL;
 }
 
@@ -145,23 +144,27 @@
         if ([customID hasPrefix:@"circle"]) {
         if (error) {
             NSLog(@"======= circle error %@",error);
-        } else {
+        } else {  //围栏添加后，在地图上的显示，只是为了更方便的演示，并不是必须的.
+            
             AMapGeoFenceCircleRegion *circleRegion = (AMapGeoFenceCircleRegion *)regions.firstObject;  //一次添加一个圆形围栏，只会返回一个
             MACircle *circleOverlay = [self showCircleInMap:circleRegion.center radius:circleRegion.radius];
-            [self.mapView setVisibleMapRect:circleOverlay.boundingMapRect];   //设置地图的可见范围，让地图缩放和平移到合适的位置
+            [self.mapView setVisibleMapRect:circleOverlay.boundingMapRect edgePadding:UIEdgeInsetsMake(20, 20, 20, 20) animated:YES];   //设置地图的可见范围，让地图缩放和平移到合适的位置
+            
         }
     } else if ([customID isEqualToString:@"polygon_1"]){
         if (error) {
             NSLog(@"=======polygon error %@",error);
-        } else {
+        } else {  //围栏添加后，在地图上的显示，只是为了更方便的演示，并不是必须的.
+            
             AMapGeoFencePolygonRegion *polygonRegion = (AMapGeoFencePolygonRegion *)regions.firstObject;
             MAPolygon *polygonOverlay = [self showPolygonInMap:polygonRegion.coordinates count:polygonRegion.count];
-            [self.mapView setVisibleMapRect:polygonOverlay.boundingMapRect];
+            [self.mapView setVisibleMapRect:polygonOverlay.boundingMapRect edgePadding:UIEdgeInsetsMake(20, 20, 20, 20) animated:YES];
+            
         }
     } else if ([customID isEqualToString:@"poi_keyword"]){
         if (error) {
             NSLog(@"======== poi_keyword error %@",error);
-        } else {
+        } else {  //围栏添加后，在地图上的显示，只是为了更方便的演示，并不是必须的.
             
             for (AMapGeoFencePOIRegion *region in regions) {
                 [self showCircleInMap:region.center radius:region.radius];
@@ -175,7 +178,8 @@
     } else if ([customID isEqualToString:@"poi_around"]){
         if (error) {
             NSLog(@"======== poi_around error %@",error);
-        } else {
+        } else {  //围栏添加后，在地图上的显示，只是为了更方便的演示，并不是必须的.
+            
             for (AMapGeoFencePOIRegion *region in regions) {
                 [self showCircleInMap:region.center radius:region.radius];
             }
@@ -187,7 +191,7 @@
     } else if ([customID isEqualToString:@"district_1"]){
         if (error) {
             NSLog(@"======== district1 error %@",error);
-        } else {
+        } else { //围栏添加后，在地图上的显示，只是为了更方便的演示，并不是必须的.
             
             for (AMapGeoFenceDistrictRegion *region in regions) {
                 
@@ -201,9 +205,9 @@
                     }
                     
                     MAPolygon *polygonOverlay = [self showPolygonInMap:coorArr count:arealocation.count];
-                    [self.mapView setVisibleMapRect:polygonOverlay.boundingMapRect];
+                    [self.mapView setVisibleMapRect:polygonOverlay.boundingMapRect edgePadding:UIEdgeInsetsMake(20, 20, 20, 20) animated:YES];
                     
-                    free(coorArr);
+                    free(coorArr);  //malloc，使用后，记得free
                     coorArr = NULL;
                     
                 }
@@ -264,7 +268,6 @@
     
     return nil;
 }
-
 
 
 - (void)didReceiveMemoryWarning {
