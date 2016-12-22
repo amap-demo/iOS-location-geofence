@@ -14,7 +14,7 @@
 
 @property (nonatomic, strong) MAMapView *mapView;
 
-@property (nonatomic, strong) AMapGeoFenceManager *geoFenceManager;
+@property (nonatomic, strong) AMapGeoFenceManager *geoFenceManager;  //地理围栏管理类ggit 
 
 @property (nonatomic, strong) CLLocation *userLocation;  //获得自己的位置，方便demo添加围栏进行测试，
 
