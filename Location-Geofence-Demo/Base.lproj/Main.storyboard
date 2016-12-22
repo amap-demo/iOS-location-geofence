@@ -1,22 +1,97 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jlH-k3-W34">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRH-2p-vhn">
+                                        <rect key="frame" x="0.0" y="20" width="160" height="35"/>
+                                        <state key="normal" title="添加圆形围栏"/>
+                                        <connections>
+                                            <action selector="addGeoFenceCircleRegion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ilI-uP-MIy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usy-0f-bKU">
+                                        <rect key="frame" x="160" y="20" width="160" height="35"/>
+                                        <state key="normal" title="添加多边形围栏"/>
+                                        <connections>
+                                            <action selector="addGeoFencePolygonRegion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RZk-85-Lrt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33O-s5-bNK">
+                                        <rect key="frame" x="0.0" y="55" width="160" height="35"/>
+                                        <state key="normal" title="添加北京麦当劳围栏"/>
+                                        <connections>
+                                            <action selector="addGeoFencePOIKeywordRegion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IUD-5i-rS8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efk-cN-1fe">
+                                        <rect key="frame" x="160" y="55" width="160" height="35"/>
+                                        <state key="normal" title="添加周边肯德基围栏"/>
+                                        <connections>
+                                            <action selector="addGeoFencePOIAroundRegion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9T5-FU-JA1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPJ-Bl-zo5">
+                                        <rect key="frame" x="0.0" y="90" width="320" height="35"/>
+                                        <state key="normal" title="添加北京市西城区围栏"/>
+                                        <connections>
+                                            <action selector="addGeoFenceDistrictRegion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jrr-cg-yVV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="efk-cN-1fe" firstAttribute="width" secondItem="GRH-2p-vhn" secondAttribute="width" id="1hb-8e-ehR"/>
+                                    <constraint firstItem="33O-s5-bNK" firstAttribute="top" secondItem="GRH-2p-vhn" secondAttribute="bottom" id="83v-ey-0gf"/>
+                                    <constraint firstItem="efk-cN-1fe" firstAttribute="height" secondItem="GRH-2p-vhn" secondAttribute="height" id="Bai-ma-PUj"/>
+                                    <constraint firstItem="MPJ-Bl-zo5" firstAttribute="top" secondItem="33O-s5-bNK" secondAttribute="bottom" id="EE7-0f-scz"/>
+                                    <constraint firstAttribute="trailing" secondItem="usy-0f-bKU" secondAttribute="trailing" id="HvR-lf-zaa"/>
+                                    <constraint firstItem="33O-s5-bNK" firstAttribute="height" secondItem="GRH-2p-vhn" secondAttribute="height" id="M7o-wv-tlP"/>
+                                    <constraint firstItem="MPJ-Bl-zo5" firstAttribute="leading" secondItem="jlH-k3-W34" secondAttribute="leading" id="THq-Vu-pfs"/>
+                                    <constraint firstItem="usy-0f-bKU" firstAttribute="top" secondItem="GRH-2p-vhn" secondAttribute="top" id="TcS-PL-cvW"/>
+                                    <constraint firstAttribute="height" constant="125" id="Thb-jS-ssi"/>
+                                    <constraint firstAttribute="trailing" secondItem="MPJ-Bl-zo5" secondAttribute="trailing" id="VW6-1d-2q7"/>
+                                    <constraint firstItem="33O-s5-bNK" firstAttribute="leading" secondItem="jlH-k3-W34" secondAttribute="leading" id="YGk-Dt-p8C"/>
+                                    <constraint firstAttribute="trailing" secondItem="efk-cN-1fe" secondAttribute="trailing" id="Yy3-Yx-zK1"/>
+                                    <constraint firstItem="usy-0f-bKU" firstAttribute="height" secondItem="MPJ-Bl-zo5" secondAttribute="height" id="diR-H8-Ugc"/>
+                                    <constraint firstItem="MPJ-Bl-zo5" firstAttribute="top" secondItem="efk-cN-1fe" secondAttribute="bottom" id="e5c-db-ZSl"/>
+                                    <constraint firstItem="33O-s5-bNK" firstAttribute="width" secondItem="GRH-2p-vhn" secondAttribute="width" id="gkX-Ys-fHo"/>
+                                    <constraint firstItem="GRH-2p-vhn" firstAttribute="top" secondItem="jlH-k3-W34" secondAttribute="top" constant="20" id="joZ-0i-pI5"/>
+                                    <constraint firstItem="usy-0f-bKU" firstAttribute="width" secondItem="GRH-2p-vhn" secondAttribute="width" id="m57-aW-Drm"/>
+                                    <constraint firstItem="usy-0f-bKU" firstAttribute="height" secondItem="GRH-2p-vhn" secondAttribute="height" id="mGQ-SI-82L"/>
+                                    <constraint firstItem="GRH-2p-vhn" firstAttribute="leading" secondItem="jlH-k3-W34" secondAttribute="leading" id="pOJ-D4-DlY"/>
+                                    <constraint firstAttribute="bottom" secondItem="MPJ-Bl-zo5" secondAttribute="bottom" id="snM-S0-SZd"/>
+                                    <constraint firstItem="usy-0f-bKU" firstAttribute="leading" secondItem="GRH-2p-vhn" secondAttribute="trailing" id="tmS-Ml-nwC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jlH-k3-W34" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CVX-lT-jfZ"/>
+                            <constraint firstAttribute="trailing" secondItem="jlH-k3-W34" secondAttribute="trailing" id="E8N-cP-ifJ"/>
+                            <constraint firstItem="jlH-k3-W34" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="W8g-25-Og3"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

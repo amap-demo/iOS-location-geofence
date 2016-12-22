@@ -13,6 +13,20 @@
 		D9955C291E0BACC700628015 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9955C271E0BACC700628015 /* Main.storyboard */; };
 		D9955C2B1E0BACC700628015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9955C2A1E0BACC700628015 /* Assets.xcassets */; };
 		D9955C2E1E0BACC700628015 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9955C2C1E0BACC700628015 /* LaunchScreen.storyboard */; };
+		D9955C3B1E0BAE5C00628015 /* AMapFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9955C381E0BAE5C00628015 /* AMapFoundationKit.framework */; };
+		D9955C3C1E0BAE5C00628015 /* AMapLocationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9955C391E0BAE5C00628015 /* AMapLocationKit.framework */; };
+		D9955C3D1E0BAE5C00628015 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9955C3A1E0BAE5C00628015 /* MAMapKit.framework */; };
+		D9955C401E0BAF9900628015 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D9955C3F1E0BAF9900628015 /* libc++.tbd */; };
+		D9955C421E0BAFA200628015 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D9955C411E0BAFA200628015 /* libz.tbd */; };
+		D9955C441E0BAFB600628015 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D9955C431E0BAFB600628015 /* libstdc++.6.0.9.tbd */; };
+		D9955C461E0BAFBF00628015 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9955C451E0BAFBF00628015 /* Security.framework */; };
+		D9955C481E0BAFC700628015 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9955C471E0BAFC700628015 /* JavaScriptCore.framework */; };
+		D9955C4A1E0BAFCE00628015 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9955C491E0BAFCE00628015 /* CoreTelephony.framework */; };
+		D9955C4C1E0BAFD700628015 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9955C4B1E0BAFD700628015 /* SystemConfiguration.framework */; };
+		D9955C521E0BB0A200628015 /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = D9955C4E1E0BB0A200628015 /* icon-72.png */; };
+		D9955C531E0BB0A200628015 /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9955C4F1E0BB0A200628015 /* icon-72@2x.png */; };
+		D9955C541E0BB0A200628015 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D9955C501E0BB0A200628015 /* icon.png */; };
+		D9955C551E0BB0A200628015 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9955C511E0BB0A200628015 /* icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +40,21 @@
 		D9955C2A1E0BACC700628015 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9955C2D1E0BACC700628015 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9955C2F1E0BACC700628015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9955C361E0BAE5C00628015 /* APIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIKey.h; sourceTree = "<group>"; };
+		D9955C381E0BAE5C00628015 /* AMapFoundationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapFoundationKit.framework; sourceTree = "<group>"; };
+		D9955C391E0BAE5C00628015 /* AMapLocationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapLocationKit.framework; sourceTree = "<group>"; };
+		D9955C3A1E0BAE5C00628015 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
+		D9955C3F1E0BAF9900628015 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		D9955C411E0BAFA200628015 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		D9955C431E0BAFB600628015 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		D9955C451E0BAFBF00628015 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D9955C471E0BAFC700628015 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		D9955C491E0BAFCE00628015 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		D9955C4B1E0BAFD700628015 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D9955C4E1E0BB0A200628015 /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
+		D9955C4F1E0BB0A200628015 /* icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72@2x.png"; sourceTree = "<group>"; };
+		D9955C501E0BB0A200628015 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		D9955C511E0BB0A200628015 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +62,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9955C4C1E0BAFD700628015 /* SystemConfiguration.framework in Frameworks */,
+				D9955C4A1E0BAFCE00628015 /* CoreTelephony.framework in Frameworks */,
+				D9955C481E0BAFC700628015 /* JavaScriptCore.framework in Frameworks */,
+				D9955C461E0BAFBF00628015 /* Security.framework in Frameworks */,
+				D9955C441E0BAFB600628015 /* libstdc++.6.0.9.tbd in Frameworks */,
+				D9955C421E0BAFA200628015 /* libz.tbd in Frameworks */,
+				D9955C401E0BAF9900628015 /* libc++.tbd in Frameworks */,
+				D9955C3D1E0BAE5C00628015 /* MAMapKit.framework in Frameworks */,
+				D9955C3B1E0BAE5C00628015 /* AMapFoundationKit.framework in Frameworks */,
+				D9955C3C1E0BAE5C00628015 /* AMapLocationKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +83,7 @@
 			children = (
 				D9955C1D1E0BACC700628015 /* Location-Geofence-Demo */,
 				D9955C1C1E0BACC700628015 /* Products */,
+				D9955C3E1E0BAF9900628015 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +103,9 @@
 				D9955C241E0BACC700628015 /* ViewController.h */,
 				D9955C251E0BACC700628015 /* ViewController.m */,
 				D9955C271E0BACC700628015 /* Main.storyboard */,
+				D9955C4D1E0BB0A200628015 /* Icon */,
+				D9955C351E0BAE5C00628015 /* Configuration */,
+				D9955C371E0BAE5C00628015 /* Extern */,
 				D9955C2A1E0BACC700628015 /* Assets.xcassets */,
 				D9955C2C1E0BACC700628015 /* LaunchScreen.storyboard */,
 				D9955C2F1E0BACC700628015 /* Info.plist */,
@@ -77,6 +120,49 @@
 				D9955C1F1E0BACC700628015 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9955C351E0BAE5C00628015 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				D9955C361E0BAE5C00628015 /* APIKey.h */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		D9955C371E0BAE5C00628015 /* Extern */ = {
+			isa = PBXGroup;
+			children = (
+				D9955C381E0BAE5C00628015 /* AMapFoundationKit.framework */,
+				D9955C391E0BAE5C00628015 /* AMapLocationKit.framework */,
+				D9955C3A1E0BAE5C00628015 /* MAMapKit.framework */,
+			);
+			path = Extern;
+			sourceTree = "<group>";
+		};
+		D9955C3E1E0BAF9900628015 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9955C4B1E0BAFD700628015 /* SystemConfiguration.framework */,
+				D9955C491E0BAFCE00628015 /* CoreTelephony.framework */,
+				D9955C471E0BAFC700628015 /* JavaScriptCore.framework */,
+				D9955C451E0BAFBF00628015 /* Security.framework */,
+				D9955C431E0BAFB600628015 /* libstdc++.6.0.9.tbd */,
+				D9955C411E0BAFA200628015 /* libz.tbd */,
+				D9955C3F1E0BAF9900628015 /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9955C4D1E0BB0A200628015 /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+				D9955C4E1E0BB0A200628015 /* icon-72.png */,
+				D9955C4F1E0BB0A200628015 /* icon-72@2x.png */,
+				D9955C501E0BB0A200628015 /* icon.png */,
+				D9955C511E0BB0A200628015 /* icon@2x.png */,
+			);
+			path = Icon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +198,11 @@
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = YMJ372W38W;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -138,7 +229,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9955C551E0BB0A200628015 /* icon@2x.png in Resources */,
 				D9955C2E1E0BACC700628015 /* LaunchScreen.storyboard in Resources */,
+				D9955C521E0BB0A200628015 /* icon-72.png in Resources */,
+				D9955C541E0BB0A200628015 /* icon.png in Resources */,
+				D9955C531E0BB0A200628015 /* icon-72@2x.png in Resources */,
 				D9955C2B1E0BACC700628015 /* Assets.xcassets in Resources */,
 				D9955C291E0BACC700628015 /* Main.storyboard in Resources */,
 			);
@@ -272,6 +367,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YMJ372W38W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Location-Geofence-Demo/Extern",
+				);
 				INFOPLIST_FILE = "Location-Geofence-Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -288,6 +387,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = YMJ372W38W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Location-Geofence-Demo/Extern",
+				);
 				INFOPLIST_FILE = "Location-Geofence-Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
