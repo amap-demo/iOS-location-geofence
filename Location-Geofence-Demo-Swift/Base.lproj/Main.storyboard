@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Location_Geofence_Demo_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="heL-rC-Qu7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IN6-Rv-eKa">
+                                        <rect key="frame" x="0.0" y="20" width="320" height="105"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lmj-XT-Huf">
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="35"/>
+                                                <state key="normal" title="添加圆形围栏"/>
+                                                <connections>
+                                                    <action selector="addGeoFenceCircleRegion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cd4-YM-ANi"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dR-x3-rs2">
+                                                <rect key="frame" x="160" y="0.0" width="160" height="35"/>
+                                                <state key="normal" title="添加多边形围栏"/>
+                                                <connections>
+                                                    <action selector="addGeoFencePolygonRegion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vwv-4F-EAa"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9k-eG-Zku">
+                                                <rect key="frame" x="0.0" y="35" width="160" height="35"/>
+                                                <state key="normal" title="添加POI关键词围栏"/>
+                                                <connections>
+                                                    <action selector="addGeoFencePOIKeywordRegion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zSk-tX-yDT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNe-fd-olr">
+                                                <rect key="frame" x="160" y="35" width="160" height="35"/>
+                                                <state key="normal" title="添加POI周边围栏"/>
+                                                <connections>
+                                                    <action selector="addGeoFencePOIAroundRegion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7h7-bt-oFn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9kk-Ac-s6i">
+                                                <rect key="frame" x="0.0" y="70" width="320" height="35"/>
+                                                <state key="normal" title="添加行政区域围栏"/>
+                                                <connections>
+                                                    <action selector="addGeoFenceDistrictRegion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BuV-rL-sgw"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="Lmj-XT-Huf" firstAttribute="leading" secondItem="IN6-Rv-eKa" secondAttribute="leading" id="8je-vw-Wra"/>
+                                            <constraint firstItem="dNe-fd-olr" firstAttribute="width" secondItem="Lmj-XT-Huf" secondAttribute="width" id="9yI-fo-Yh2"/>
+                                            <constraint firstItem="6dR-x3-rs2" firstAttribute="height" secondItem="9kk-Ac-s6i" secondAttribute="height" id="A2u-Wf-zUc"/>
+                                            <constraint firstAttribute="trailing" secondItem="dNe-fd-olr" secondAttribute="trailing" id="FLI-6g-7rd"/>
+                                            <constraint firstAttribute="height" constant="105" id="GW0-uT-Epz"/>
+                                            <constraint firstItem="6dR-x3-rs2" firstAttribute="leading" secondItem="Lmj-XT-Huf" secondAttribute="trailing" id="HHS-1U-uZj"/>
+                                            <constraint firstItem="9kk-Ac-s6i" firstAttribute="top" secondItem="Q9k-eG-Zku" secondAttribute="bottom" id="Qjk-OJ-DRc"/>
+                                            <constraint firstItem="6dR-x3-rs2" firstAttribute="height" secondItem="Lmj-XT-Huf" secondAttribute="height" id="Tsc-yQ-SvQ"/>
+                                            <constraint firstItem="9kk-Ac-s6i" firstAttribute="top" secondItem="dNe-fd-olr" secondAttribute="bottom" id="Uvd-jl-x2U"/>
+                                            <constraint firstItem="9kk-Ac-s6i" firstAttribute="leading" secondItem="IN6-Rv-eKa" secondAttribute="leading" id="Wwr-k2-ndn"/>
+                                            <constraint firstItem="dNe-fd-olr" firstAttribute="height" secondItem="Lmj-XT-Huf" secondAttribute="height" id="YHW-Yl-lvO"/>
+                                            <constraint firstItem="Q9k-eG-Zku" firstAttribute="width" secondItem="Lmj-XT-Huf" secondAttribute="width" id="YRU-3k-SHv"/>
+                                            <constraint firstAttribute="trailing" secondItem="6dR-x3-rs2" secondAttribute="trailing" id="a1t-rv-ASD"/>
+                                            <constraint firstItem="6dR-x3-rs2" firstAttribute="top" secondItem="IN6-Rv-eKa" secondAttribute="top" id="ba4-01-ldk"/>
+                                            <constraint firstItem="Q9k-eG-Zku" firstAttribute="height" secondItem="Lmj-XT-Huf" secondAttribute="height" id="hd5-BK-KAe"/>
+                                            <constraint firstItem="6dR-x3-rs2" firstAttribute="width" secondItem="Lmj-XT-Huf" secondAttribute="width" id="ntq-AM-H37"/>
+                                            <constraint firstAttribute="trailing" secondItem="9kk-Ac-s6i" secondAttribute="trailing" id="oZx-2E-AIB"/>
+                                            <constraint firstItem="Lmj-XT-Huf" firstAttribute="top" secondItem="IN6-Rv-eKa" secondAttribute="top" id="ob6-Bs-CGO"/>
+                                            <constraint firstItem="Q9k-eG-Zku" firstAttribute="top" secondItem="Lmj-XT-Huf" secondAttribute="bottom" id="shL-aF-r74"/>
+                                            <constraint firstAttribute="bottom" secondItem="9kk-Ac-s6i" secondAttribute="bottom" id="vzR-cQ-pxP"/>
+                                            <constraint firstItem="Q9k-eG-Zku" firstAttribute="leading" secondItem="IN6-Rv-eKa" secondAttribute="leading" id="yIT-8J-rC7"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="fDd-Yk-3Kj"/>
+                                    <constraint firstAttribute="trailing" secondItem="IN6-Rv-eKa" secondAttribute="trailing" id="fzJ-lt-2LS"/>
+                                    <constraint firstItem="IN6-Rv-eKa" firstAttribute="top" secondItem="heL-rC-Qu7" secondAttribute="top" constant="20" id="g9N-U5-4lS"/>
+                                    <constraint firstItem="IN6-Rv-eKa" firstAttribute="leading" secondItem="heL-rC-Qu7" secondAttribute="leading" id="ydD-Lv-6rX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="heL-rC-Qu7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JML-YN-pbt"/>
+                            <constraint firstItem="heL-rC-Qu7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nNg-5U-Tix"/>
+                            <constraint firstAttribute="trailing" secondItem="heL-rC-Qu7" secondAttribute="trailing" id="ynR-6a-Mpy"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

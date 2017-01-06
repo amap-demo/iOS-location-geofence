@@ -64,6 +64,23 @@ self.geoFenceManager.activeAction = AMapGeoFenceActiveActionInside | AMapGeoFenc
 `Swift`
 
 ````
-敬请期待
+self.geoFenceManager.activeAction = [AMapGeoFenceActiveAction.inside , AMapGeoFenceActiveAction.outside , AMapGeoFenceActiveAction.stayed ]//进入，离开，停留都要进行通知
+
+self.geoFenceManager.removeAllGeoFenceRegions()  //移除所有已经添加的围栏，如果有正在请求的围栏也会丢弃
+
+self.geoFenceManager.addKeywordPOIRegionForMonitoring(withKeyword: "北京大学", poiType: "高等院校", city: "北京", size: 20, customID: "poi_1")  //POI关键词
+
+self.geoFenceManager.addAroundPOIRegionForMonitoring(withLocationPoint: coordinate, aroundRadius: 10000, keyword: "肯德基", poiType: "050301", size: 20, customID: "poi_2") //POI周边
+
+self.geoFenceManager.addDistrictRegionForMonitoring(withDistrictName: "海淀区", customID: "district_1")   //行政区域
+
+//地理围栏状态改变时回调，当围栏状态的值发生改变，定位失败都会调用
+func amapGeoFenceManager(_ manager: AMapGeoFenceManager!, didGeoFencesStatusChangedFor region: AMapGeoFenceRegion!, customID: String!, error: Error!) {
+    if error == nil {
+        print("status changed \(region.description)")
+    } else {
+        print("status changed error \(error)")
+    }
+}
 
 ````
