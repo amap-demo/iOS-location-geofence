@@ -14,6 +14,7 @@
 		D971B68F1E1FC6D000F726EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D971B68D1E1FC6D000F726EF /* Main.storyboard */; };
 		D971B6911E1FC6D000F726EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D971B6901E1FC6D000F726EF /* Assets.xcassets */; };
 		D971B6941E1FC6D000F726EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D971B6921E1FC6D000F726EF /* LaunchScreen.storyboard */; };
+		D98F9BF81E23B4870040F730 /* Location_Geofence_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D98F9BF71E23B4870040F730 /* Location_Geofence_DemoUITests.m */; };
 		D9955C201E0BACC700628015 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9955C1F1E0BACC700628015 /* main.m */; };
 		D9955C231E0BACC700628015 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9955C221E0BACC700628015 /* AppDelegate.m */; };
 		D9955C261E0BACC700628015 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9955C251E0BACC700628015 /* ViewController.m */; };
@@ -33,6 +34,16 @@
 		D9955C551E0BB0A200628015 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9955C511E0BB0A200628015 /* icon@2x.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D98F9BFA1E23B4870040F730 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9955C131E0BACC700628015 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9955C1A1E0BACC700628015;
+			remoteInfo = "Location-Geofence-Demo";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		2231A695FCDBA1CC7BEC6B86 /* Pods-Location-Geofence-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Location-Geofence-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Location-Geofence-Demo/Pods-Location-Geofence-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		34D9F3A15832A493F87D7DFD /* Pods-Location-Geofence-Demo-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Location-Geofence-Demo-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Location-Geofence-Demo-Swift/Pods-Location-Geofence-Demo-Swift.release.xcconfig"; sourceTree = "<group>"; };
@@ -48,6 +59,9 @@
 		D971B6931E1FC6D000F726EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D971B6951E1FC6D000F726EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D971B6991E1FC72800F726EF /* Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		D98F9BF51E23B4870040F730 /* Location-Geofence-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Location-Geofence-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D98F9BF71E23B4870040F730 /* Location_Geofence_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Location_Geofence_DemoUITests.m; sourceTree = "<group>"; };
+		D98F9BF91E23B4870040F730 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9955C1B1E0BACC700628015 /* Location-Geofence-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Location-Geofence-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9955C1F1E0BACC700628015 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D9955C211E0BACC700628015 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +92,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB566520592F9F12DDDD1EE9 /* libPods-Location-Geofence-Demo-Swift.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98F9BF21E23B4870040F730 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,11 +134,21 @@
 			path = "Location-Geofence-Demo-Swift";
 			sourceTree = "<group>";
 		};
+		D98F9BF61E23B4870040F730 /* Location-Geofence-DemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D98F9BF71E23B4870040F730 /* Location_Geofence_DemoUITests.m */,
+				D98F9BF91E23B4870040F730 /* Info.plist */,
+			);
+			path = "Location-Geofence-DemoUITests";
+			sourceTree = "<group>";
+		};
 		D9955C121E0BACC700628015 = {
 			isa = PBXGroup;
 			children = (
 				D9955C1D1E0BACC700628015 /* Location-Geofence-Demo */,
 				D971B6881E1FC6D000F726EF /* Location-Geofence-Demo-Swift */,
+				D98F9BF61E23B4870040F730 /* Location-Geofence-DemoUITests */,
 				D9955C1C1E0BACC700628015 /* Products */,
 				D9955C3E1E0BAF9900628015 /* Frameworks */,
 				E76205735FFD7C06AB0394D6 /* Pods */,
@@ -129,6 +160,7 @@
 			children = (
 				D9955C1B1E0BACC700628015 /* Location-Geofence-Demo.app */,
 				D971B6871E1FC6D000F726EF /* Location-Geofence-Demo-Swift.app */,
+				D98F9BF51E23B4870040F730 /* Location-Geofence-DemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -228,6 +260,24 @@
 			productReference = D971B6871E1FC6D000F726EF /* Location-Geofence-Demo-Swift.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D98F9BF41E23B4870040F730 /* Location-Geofence-DemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D98F9BFE1E23B4870040F730 /* Build configuration list for PBXNativeTarget "Location-Geofence-DemoUITests" */;
+			buildPhases = (
+				D98F9BF11E23B4870040F730 /* Sources */,
+				D98F9BF21E23B4870040F730 /* Frameworks */,
+				D98F9BF31E23B4870040F730 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D98F9BFB1E23B4870040F730 /* PBXTargetDependency */,
+			);
+			name = "Location-Geofence-DemoUITests";
+			productName = "Location-Geofence-DemoUITests";
+			productReference = D98F9BF51E23B4870040F730 /* Location-Geofence-DemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		D9955C1A1E0BACC700628015 /* Location-Geofence-Demo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9955C321E0BACC700628015 /* Build configuration list for PBXNativeTarget "Location-Geofence-Demo" */;
@@ -268,6 +318,12 @@
 							};
 						};
 					};
+					D98F9BF41E23B4870040F730 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = YMJ372W38W;
+						ProvisioningStyle = Manual;
+						TestTargetID = D9955C1A1E0BACC700628015;
+					};
 					D9955C1A1E0BACC700628015 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = YMJ372W38W;
@@ -295,6 +351,7 @@
 			targets = (
 				D9955C1A1E0BACC700628015 /* Location-Geofence-Demo */,
 				D971B6861E1FC6D000F726EF /* Location-Geofence-Demo-Swift */,
+				D98F9BF41E23B4870040F730 /* Location-Geofence-DemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -307,6 +364,13 @@
 				D971B6941E1FC6D000F726EF /* LaunchScreen.storyboard in Resources */,
 				D971B6911E1FC6D000F726EF /* Assets.xcassets in Resources */,
 				D971B68F1E1FC6D000F726EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98F9BF31E23B4870040F730 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +493,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D98F9BF11E23B4870040F730 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98F9BF81E23B4870040F730 /* Location_Geofence_DemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D9955C171E0BACC700628015 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -440,6 +512,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D98F9BFB1E23B4870040F730 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9955C1A1E0BACC700628015 /* Location-Geofence-Demo */;
+			targetProxy = D98F9BFA1E23B4870040F730 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D971B68D1E1FC6D000F726EF /* Main.storyboard */ = {
@@ -515,6 +595,34 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "./Location-Geofence-Demo-Swift/Swift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D98F9BFC1E23B4870040F730 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = "Location-Geofence-DemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.Location-Geofence-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8014ae4e-33b6-4937-87e3-3725a2aad4f7";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
+				TEST_TARGET_NAME = "Location-Geofence-Demo";
+			};
+			name = Debug;
+		};
+		D98F9BFD1E23B4870040F730 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = "Location-Geofence-DemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.Location-Geofence-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8014ae4e-33b6-4937-87e3-3725a2aad4f7";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
+				TEST_TARGET_NAME = "Location-Geofence-Demo";
 			};
 			name = Release;
 		};
@@ -658,6 +766,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		D98F9BFE1E23B4870040F730 /* Build configuration list for PBXNativeTarget "Location-Geofence-DemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D98F9BFC1E23B4870040F730 /* Debug */,
+				D98F9BFD1E23B4870040F730 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		D9955C161E0BACC700628015 /* Build configuration list for PBXProject "Location-Geofence-Demo" */ = {
 			isa = XCConfigurationList;

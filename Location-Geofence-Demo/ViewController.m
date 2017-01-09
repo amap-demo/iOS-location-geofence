@@ -148,7 +148,7 @@
             
             AMapGeoFenceCircleRegion *circleRegion = (AMapGeoFenceCircleRegion *)regions.firstObject;  //一次添加一个圆形围栏，只会返回一个
             MACircle *circleOverlay = [self showCircleInMap:circleRegion.center radius:circleRegion.radius];
-            [self.mapView setVisibleMapRect:circleOverlay.boundingMapRect edgePadding:UIEdgeInsetsMake(20, 20, 20, 20) animated:YES];   //设置地图的可见范围，让地图缩放和平移到合适的位置
+            [self.mapView setVisibleMapRect:circleOverlay.boundingMapRect edgePadding:UIEdgeInsetsMake(20, 20, 20, 20) animated:NO];   //设置地图的可见范围，让地图缩放和平移到合适的位置
             
         }
     } else if ([customID isEqualToString:@"polygon_1"]){
@@ -158,7 +158,7 @@
             
             AMapGeoFencePolygonRegion *polygonRegion = (AMapGeoFencePolygonRegion *)regions.firstObject;
             MAPolygon *polygonOverlay = [self showPolygonInMap:polygonRegion.coordinates count:polygonRegion.count];
-            [self.mapView setVisibleMapRect:polygonOverlay.boundingMapRect edgePadding:UIEdgeInsetsMake(20, 20, 20, 20) animated:YES];
+            [self.mapView setVisibleMapRect:polygonOverlay.boundingMapRect edgePadding:UIEdgeInsetsMake(20, 20, 20, 20) animated:NO];
             
         }
     } else if ([customID isEqualToString:@"poi_keyword"]){
@@ -205,7 +205,7 @@
                     }
                     
                     MAPolygon *polygonOverlay = [self showPolygonInMap:coorArr count:arealocation.count];
-                    [self.mapView setVisibleMapRect:polygonOverlay.boundingMapRect edgePadding:UIEdgeInsetsMake(20, 20, 20, 20) animated:YES];
+                    [self.mapView setVisibleMapRect:polygonOverlay.boundingMapRect edgePadding:UIEdgeInsetsMake(20, 20, 20, 20) animated:NO];
                     
                     free(coorArr);  //malloc，使用后，记得free
                     coorArr = NULL;

@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D98F9BF41E23B4870040F730"
+               BuildableName = "Location-Geofence-DemoUITests.xctest"
+               BlueprintName = "Location-Geofence-DemoUITests"
+               ReferencedContainer = "container:Location-Geofence-Demo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
