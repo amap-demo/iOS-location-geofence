@@ -27,8 +27,12 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>地理围栏需要您允许后台定位权限才可以使用</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>地理围栏需要您允许后台定位权限才可以使用</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>地理围栏需要您允许定位权限才可以使用</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>location</string>
